@@ -1,0 +1,74 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/pallete.scss';
+
+.widget{
+    height: 100%;
+    @include flex-column;
+    cursor: pointer;
+    .widget__image-overlay{
+        width: 100%;
+        max-width: 100%;
+        min-height: 230px;
+        position: relative;
+        .widget__image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .widget__tag{
+        margin-top: 1rem;
+        color: $red;
+        @include fontRem(13,700,13);
+    }
+    .widget__name{
+        margin-top: 1rem;
+        @include fontRem(24,700,30);
+        color: $black;
+        flex-grow: 1;
+    }
+    .widget__meta-infos{
+        @include d-flex;
+    }
+    .widget__author{
+        @include fontRem(12,500,12);
+        color: $black;
+    }
+    .widget__date,.widget__views{
+        @include fontRem(12,400,12);
+        color: $gray;
+    }
+    .meta-info{
+        position: relative;
+        margin-top: 1rem;
+        &:not(:last-child){
+            padding-right: 0.5rem;
+            &::after{
+                content: " ";
+                width: 3px;
+                height: 3px;
+                background-color: $lightGray1;
+                border-radius:  50% ;
+                @include absoluteCenter('vertical');
+                right: 0;
+            }
+        }
+        &:not(:first-child){
+            padding-left: 0.3rem;
+        }
+    }
+    .widget__text{
+        margin-top: 1rem;
+        color: $gray2;
+        @include fontRem(14,400,20);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/pallete.scss';
+
+.section-blog{
+    padding-top: 3rem;
+    @media only screen and (max-width: 576px){
+        padding-top: 2.3rem;
+    }
+    .section-blog__main-panel{
+        @include d-flex;
+        margin: 0 -20px;
+        row-gap: 3rem;
+        @media only screen and (max-width: 992px){
+            margin: 0 -15px;
+            row-gap: 2rem;
+        }
+    }
+}
+.widget-overlay{
+    max-width: 33.333%;
+    width: 100%;
+    padding: 0 20px;
+    @media only screen and (max-width: 992px){
+        max-width: 50%;
+        padding: 0 15px;
+    }
+    @media only screen and (max-width: 576px){
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+@import url('./mixins.scss');
+@import url('./pallete.scss');
+@import url('./reset.scss');
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container{
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+

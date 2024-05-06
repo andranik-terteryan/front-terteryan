@@ -1,0 +1,9 @@
+@import '../../assets/styles/mixins.scss';
+
+.page{
+    min-height: 100vh;
+    @include flex-column;
+    .wrapper{
+        flex: 1 1 auto;
+    }
+}   
