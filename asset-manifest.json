@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/front-terteryan/static/css/main.2a18c53d.css",
-    "main.js": "/front-terteryan/static/js/main.a54504bc.js",
+    "main.css": "/front-terteryan/static/css/main.b33a47e3.css",
+    "main.js": "/front-terteryan/static/js/main.c65110e7.js",
     "static/media/logotype.svg": "/front-terteryan/static/media/logotype.1f7d6f7902153b6d6a401a6f1a2ea311.svg",
     "index.html": "/front-terteryan/index.html",
-    "main.2a18c53d.css.map": "/front-terteryan/static/css/main.2a18c53d.css.map",
-    "main.a54504bc.js.map": "/front-terteryan/static/js/main.a54504bc.js.map"
+    "main.b33a47e3.css.map": "/front-terteryan/static/css/main.b33a47e3.css.map",
+    "main.c65110e7.js.map": "/front-terteryan/static/js/main.c65110e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a18c53d.css",
-    "static/js/main.a54504bc.js"
+    "static/css/main.b33a47e3.css",
+    "static/js/main.c65110e7.js"
   ]
 }
