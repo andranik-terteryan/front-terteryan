@@ -5,9 +5,11 @@ export const useBlogWidget = () => {
     
     const openModal = () => {
         setIsOpen(!isOpen)
+        document.body.classList.add('hidden')
     }
     const onClose = () => {
         setIsOpen(false)
+        document.body.classList.remove('hidden')
     }
   return {
     isOpen,

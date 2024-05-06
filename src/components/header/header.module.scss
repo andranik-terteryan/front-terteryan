@@ -226,21 +226,9 @@
     transition: opacity 0.25s linear;
     user-select: none;
     display: none;
+    height: 25px;
     @media only screen and (max-width: 576px) {
       @include flex-center;
-    }
-    &.open {
-      .hamburger__item {
-        background: 0 0;
-      }
-      .hamburger__item:before {
-        transform: rotate(45deg);
-        background-color: $black;
-      }
-      .hamburger__item:after {
-        transform: rotate(-45deg);
-        background-color: $black;
-      }
     }
     .hamburger__item:before,
     .hamburger__item:after {

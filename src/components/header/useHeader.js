@@ -12,14 +12,15 @@ export const useHeader = (headerTopRef,headerRef,mobileMenuRef,posts,setPosts,se
     const [headerScrollDistance, setHeaderScrollDistance] = useState(0);
     const handleToggleMenu = () => {
         setOpenMenu(!openMenu)
-    }
-    console.log(mobileMenuRef)
-    
+        document.body.classList.toggle('hidden')
+    } 
+    const handleCloseMenu = () => {
+        setOpenMenu(false)
+        document.body.classList.remove('hidden')
+    }      
     const handleShowSearch = () => {
         setisShowSearch(!isShowSearch)
     }
-
-
 
     function searchItems(query) {
         const results = [];
@@ -70,7 +71,7 @@ export const useHeader = (headerTopRef,headerRef,mobileMenuRef,posts,setPosts,se
         };
     }, [prevScrollPos, headerScrollTopFirstDistance, headerScrollTopSecondDistance, isScrollingUp]);
 
-    useOutsideClick(mobileMenuRef, () => setOpenMenu(false));
+    useOutsideClick(mobileMenuRef, handleCloseMenu);
 
 
     return {
